@@ -21,11 +21,10 @@
 
 // - виведення даних:
 
- console.log("Hello!");
+// console.log("Hello!");
 // alert("Hello!");
 
 // - отримання даних:
-
 // const answer = confirm("Is your name Ivan?"); // користувач може відповісти так або відхилити питання
 // console.log(answer)
 // prompt("What is your name?"); // користувач  може ввести якісь дані або відхилити питання
@@ -93,7 +92,7 @@
 // console.log("4" != 4); // false
 // console.log("4" !== 4); // true
 // console.log(null > 0) // false
-// console.log(null >= 0) // true
+// ,,,,,,,,,,,,,,,,,,,console.log(null >= 0) // true
 
 // ❗️❗️❗️ Number.isNaN
 
@@ -165,7 +164,7 @@
 // console.log("4" / 2); // 2
 // console.log("4px" - 2); // NaN
 // console.log(7 / 0); // Infinity
-// console.log("  -9  " + 5); // ' -9 5'
+// console.log(" -9 "+ 5); // ' -9 5'
 
 // ❗️❗️❗️ Методи рядків
 
@@ -269,3 +268,485 @@
 // console.log(null ?? 1)
 // console.log(undefined ?? 1)
 // console.log(false ?? 1)
+// Change code below this line
+
+// Заняття 1-2
+// ❗️❗️❗️ Оператори розгалудження
+
+// const number1 = Number(prompt("Enter a number 1, please"));
+// console.log(number1);
+// const number2 = Number(prompt("Enter a number 2, please"));
+// console.log(number2);
+
+// if (number1 > number2) {
+    //      console.log('I am here')
+    // }
+
+// if (number1 > number2) {
+    //     console.log('+')
+    // } else {
+    //     console.log('-')
+    // }
+
+// if (number1 > number2) {
+    // console.log(">");
+    // } else if (number1 === number2) {
+    // console.log("=");
+    // } else if (number1 < number2) {
+    // console.log("<");
+    // }
+    
+// if (number1 > number2) {
+//   console.log(">");
+// } else if (number1 === number2) {
+//   console.log("=");
+// } else {
+//   console.log("<");
+// }
+
+// if (number1 > number2) {
+//   console.log(">");
+// } else {
+
+//   if (number1 === number2) {
+//     console.log("=");
+//   } else {
+//     console.log("<");
+//   }
+
+// }
+
+// if(number1 > 50 && number2 > 50) {
+//     console.log('super')
+// }
+
+// ❗️❗️❗️ Тернарний оператор
+
+// const number1 = 100
+
+// if (number1 > 20) {
+    //  console.log('true')
+    // } else {
+    //     console.log('false')
+    // }
+
+// number1 > 20 ? console.log('true') : console.log('false')
+
+// const number2 = 20;
+// number2 > 20
+//   ? console.log(">")
+//   : number2 === 20
+//   ? console.log("=")
+//   : console.log("<");
+
+// ❗️❗️❗️ Switch
+
+// const number = Number(prompt("Enter a number berween 0 and 3"));
+
+// switch (number) {
+    //      case 0:
+        //          console.log("Your entered 0");
+        //         break;
+    //    case 1:
+        //         console.log("Your entered 1");
+        //          break;
+    //      case 2:
+        //         console.log("Your entered 2");
+        //         break;
+    //     case 3:
+        //         console.log("Your entered 3");
+        //          break;
+    //     default:
+        //          console.log("Your entered another number");
+    // }
+
+// if (number === 0) {
+//   console.log("Your entered 0");
+// } else if (number === 1) {
+//   console.log("Your entered 1");
+// } else if (number === 2) {
+//   console.log("Your entered 2");
+// } else if (number === 3) {
+//   console.log("Your entered 3");
+// } else {
+//   console.log("Your entered another number");
+// }
+
+
+// ❗️❗️❗️ Області видимості
+
+// const a = 1;
+// console.log(b)
+
+// if (true) {
+//  const a = 2;
+//     const b = 3;
+//  console.log(a)
+//     if (true) {
+//         const a = 4;
+// console.log(a)
+//     }
+//     if (true) {
+//  const a = 4;
+//         console.log(a)
+//     }
+// }
+// console.log(b)
+
+// let a = 1;
+
+// if (true) {
+//   a = 2;
+//  console.log(a)
+// }
+
+// console.log(a);
+
+// ❗️❗️❗️ Цикли
+
+//let password = "";
+
+//do {  password = prompt("Введіть пароль довший 4-х символів", "");
+//} while (password.length < 5);
+
+// console.log("Ввели пароль: ", password);
+
+
+
+// let counter = 1;
+
+//while (counter <= 5) {
+    //     console.log("counter: ", counter);
+    //     counter = counter + 1
+    //      counter += 1;
+    //}
+
+// console.log('next')
+
+//let number
+
+// do {
+    //      console.log('here')
+    //      number = prompt('Input number, that bigger then 100')
+    // } while (number <= 100)
+
+// console.log(number)
+
+// for (let i = 0; i <= 3; i += 1) {
+//     console.log(i);
+// }
+
+//let word = "";
+
+//for (let i = 0; i < 3; i += 1) {
+    //     console.log("Iteration:", i + 1);
+    //      console.log("previous string:", word);
+    //     console.log(i);
+    //    word += i;
+    //     console.log("next string:", word);
+    // }
+//  https://monosnap.com/file/agY6GyBSoMjnf2o9L6IdU4vRnGdZPm
+// console.log('final:', word)
+
+// const word = "css";
+// let word2 = "";
+
+// for (let i = 0; i < word.length; i += 1) {
+//   console.log("Iteration:", i + 1);
+//   console.log('i', i)
+//   console.log("previous string", word2);
+//   console.log(word[i]);
+
+//   word2 += word[i];
+//   console.log("next string", word2);
+// }
+
+// https://monosnap.com/file/R8e4VDAfvT1CzBHBp9pY0uyEdvsIe6
+// console.log(word2);
+
+// const num1 = 5
+// const num2 = 10
+
+// for (let i = num2; i >= num1; i -= 1) {
+    //    console.log(i)
+    // }
+
+// for(let a = 100; a > 50; a -= 10) {
+//     console.log(a)
+// }
+
+// for (let i = 0; i <= 5; i += 1) {
+    //       console.log(i);
+
+    //      if (i === 2) {
+        //           console.log("Знайшли число 2, перериваємо виконання циклу");
+        //          break;
+        //      }
+    //  }
+
+// console.log("Лог після циклу");
+
+// for (let i = 0; i < 15; i += 1) {
+    //      console.log('before', i);
+    //     if (i / 3 === 4 || i / 2 === 5) {
+        //           continue;
+        //      }
+    //     console.log('after', i);
+    //  }
+
+
+
+// a:
+// for (let i = 0; i < 3; i+=1) {
+// console.log('i', i)
+//    b:
+//    for (let j = 0; j < 3; j+=1) {
+//     console.log('  j', j)
+//       if (i === 1 && j === 1) {
+//          break a;
+//       }
+//    }
+// }
+// AUTOPEREVIRKU//
+// Change code below this line
+//function add(a, b, c) {
+//console.log(`Addition result equals ${a + b+ c}`);
+ //return a + b + c;
+  //}
+//add(2, 5, 8); // 15
+//console.log(add(15, 27, 10));
+//console.log(add(10, 20, 30));
+//console.log(add(5, 10, 15));
+
+//function add(a, b, c) {
+ // console.log(`Addition result equals ${a + b+ c}`);
+  // Change code above this line
+//}
+
+//add(15, 27, 10);
+//add(10, 20, 30);
+//add(5, 10, 15);
+
+//function makeMessage(name, price) {
+  // Change code below this line
+   //const message = `You picked ${name}, price per item is ${price} credits`;
+ //console.log(message);
+  // Change code above this line
+ // return message;
+//}
+
+//makeMessage('Radar', 6150);
+//makeMessage('Scanner', 3500);
+//makeMessage('Reactor', 8000);
+//makeMessage('Engine', 4070);
+//function calculateTotalPrice (orderedQuantity, pricePerItem) {
+  // Change code below this line
+  //const totalPrice = orderedQuantity * pricePerItem;
+
+  // Change code above this line
+  //console.log(totalPrice)
+  //return totalPrice;
+// };
+// calculateTotalPrice(5, 100);
+// calculateTotalPrice(8, 60);
+// calculateTotalPrice(3, 400);
+// calculateTotalPrice(1, 3500);
+// calculateTotalPrice(12, 70);
+//function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+  // Change code below this line
+ //const message = `You ordered droids worth ${orderedQuantity * pricePerDroid + deliveryFee} credits. Delivery ${deliveryFee} credits is included in total price.`;   
+  //  console.log(message);   
+    
+
+
+  // Change code above this line
+ // return message;
+//};
+//makeOrderMessage(2, 100, 50);
+//makeOrderMessage(4, 300, 100);
+//makeOrderMessage(10, 70, 200);
+//function isAdult(age) {
+    // Change code below this line
+  //  const passed = ${ age >= 18
+//};
+
+  // Change code above this line
+  //return passed;
+//};
+//console.log.isAdult(20);
+//isAdult(8);
+//isAdult(8);
+//isAdult(37);
+//function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+  //  let message; 
+  //  const totalPrice = pricePerDroid * orderedQuantity;
+//if(totalPrice > customerCredits) {message = "Insufficient funds!";
+   // } else {message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`;
+   // }
+  // Change code above this line
+ // return message;
+//};
+//makeTransaction(3000, 5, 23000);
+//makeTransaction(1000, 3, 15000);
+//makeTransaction(5000, 10, 8000);
+//makeTransaction(2000, 8, 10000);
+//makeTransaction(500, 10, 5000);
+//function getDiscount(totalSpent) {
+ // const BASE_DISCOUNT = 0;
+ // const BRONZE_DISCOUNT = 0.02;
+  //const SILVER_DISCOUNT = 0.05;
+ // const GOLD_DISCOUNT = 0.1;
+ //let discount;
+  // Change code below this line
+   // if (totalSpent >= 50000) {
+      //  discount = GOLD_DISCOUNT;
+    //} else if (totalSpent >= 20000 && totalSpent < 50000) {
+    //    discount = SILVER_DISCOUNT;
+   // } else if (totalSpent >= 5000 && totalSpent < 20000) {
+    //    discount = BRONZE_DISCOUNT;
+    //} else if (totalSpent < 5000) {
+    //    discount = BASE_DISCOUNT;
+   // }
+  // Change code above this line
+  //return discount;
+//};
+//console.log(getDiscount(137000));
+//console.log(getDiscount(46900));
+//console.log(getDiscount(8250));
+//console.log(getDiscount(1300));
+//console.log(getDiscount(5000));
+//console.log(getDiscount(20000));
+//console.log(getDiscount(50000));
+//function checkPassword(password) {
+  //const ADMIN_PASSWORD = "jqueryismyjam";
+ // let message;
+  // Change code below this line
+//switch (password) {
+   // case null:
+   // message = "Canceled by user!";
+   // break;
+    
+   // case ADMIN_PASSWORD:   
+   // message = "Welcome!";
+   // break;
+
+  //  default:
+ //   message = "Access denied, wrong password!";
+ // }
+
+  // Change code above this line
+ // return message;
+//};
+//console.log(checkPassword("mangohackzor"));
+//console.log(checkPassword(null));
+//console.log(checkPassword("polyhax"));
+//console.log(checkPassword("jqueryismyjam")); 
+//function getShippingCost(country) {
+//    let message;
+//    let price;
+  // Change code below this line
+//switch (country) {
+  //  case "China":
+   //     price = 100;
+    //    message = `Shipping to ${country} will cost ${price} credits`;
+      //  break;
+    
+ //   case "Chile":
+ //       price = 250;
+  //      message = `Shipping to ${country} will cost ${price} credits`;
+    //    break;
+      //  
+ //     case "Australia":
+   //     price = 170;
+     //   message = `Shipping to ${country} will cost ${price} credits`;
+       // break;  
+    
+   // case "Jamaica":
+     //   price = 120;
+       // message = `Shipping to ${country} will cost ${price} credits`;
+     //   break; 
+    
+//      default: 
+//   message = "Sorry, there is no delivery to your country"
+//}
+  // Change code above this line
+  //return message;
+//};
+//console.log(getShippingCost("Australia"));
+//console.log(getShippingCost("Germany"));
+//console.log(getShippingCost("China"));
+//console.log(getShippingCost("Chile"));
+//console.log(getShippingCost("Jamaica"));
+//console.log(getShippingCost("Sweden"));
+
+//function getNameLength(name) {
+ // const message = `Name ${name} is ${name.length} characters long`; // Change this line
+
+ // return message;
+//};
+//console.log(getNameLength("Poly"));
+//console.log(getNameLength("Harambe"));
+//console.log(getNameLength("Billy"));
+///console.log(getNameLength("Joe"));
+
+//function getSubstring(string, length) {
+ // const substring = string.slice(0, length); // Change this line
+
+ // return substring;
+//};
+//console.log(getSubstring("Hello world", 3));
+//console.log(getSubstring("Hello world", 6));
+//console.log(getSubstring("Hello world", 8));
+//console.log(getSubstring("Hello world", 11));
+//console.log(getSubstring("Hello world", 0));
+
+//function formatMessage(message, maxLength) {
+  //let result;
+  // Change code below this line
+   // if (message.length <= maxLength) {
+    //    result = message;
+   // } else { result = message.slice(0, maxLength) + "...";}
+  /// Change code above this line
+  //return result;
+//};
+//console.log(formatMessage("Curabitur ligula sapien", 16));
+//console.log(formatMessage("Curabitur ligula sapien", 23)); 
+//console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+//console.log(formatMessage("Vestibulum facilisis purus nec", 30));
+//console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+//console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
+
+//function normalizeInput(input) {
+  //const normalizedInput = input.toLowerCase(); // Change this line
+
+ // return normalizedInput;
+//};
+//console.log(normalizeInput("Hello world"));
+//console.log(normalizeInput("This ISN'T SpaM"));
+//console.log(normalizeInput("Big SALE"));
+//function checkForName(fullName, name) {
+ //const result = fullName.includes(name); // Change this line
+ // return result;
+//};
+//console.log(checkForName("Egor Kolbasov", "Egor")); // true
+//console.log(checkForName("Egor Kolbasov", "egor"))
+//console.log(checkForName("Egor Kolbasov", "egOr"))
+//console.log(checkForName("Egor Kolbasov", "Zhenya"))
+//console.log(checkForName("Vadim Nekrasov", "Vadim"))
+//console.log(checkForName("Vadim Nekrasov", "vadim"))
+//console.log(checkForName("Vadim Nekrasov", "Dima"))
+
+//function checkForSpam(message) {
+ // let result;
+  // Change code below this line
+ // message.toLowerCase().includes("spam") || message.toLowerCase().includes("sale") ? result = true : result = false;
+  // Change code above this line
+ // return result;
+//};
+//console.log(checkForSpam("Latest technology news"));
+//console.log(checkForSpam("JavaScript weekly newsletter"));
+//console.log(checkForSpam("Get best sale offers now!"));
+//console.log(checkForSpam("Amazing SalE, only tonight!"));
+//console.log(checkForSpam("Trust me, this is not a spam message"));
+//console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
+//console.log(checkForSpam("[SPAM] How to earn fast money?"));
