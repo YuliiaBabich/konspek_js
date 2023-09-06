@@ -75,7 +75,7 @@ console.log(getExtremeElements([1, 2, 3, 4, 5])); //1,5
 console.log(getExtremeElements(["Earth", "Mars", "Venus"])); // earth, venus
 console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));*/
 
-/*function splitMessage(message, delimiter) {
+function splitMessage(message, delimiter) {
   let words;
   // Change code below this line
  words = message.split(delimiter);
@@ -85,4 +85,4 @@ console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));*/
 }
 console.log(splitMessage("Mango hurries to the train", " "));
 console.log(splitMessage("Mango", ""));
-console.log(splitMessage("best_for_week", "_"));*/
+console.log(splitMessage("best_for_week", "_"));
