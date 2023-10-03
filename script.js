@@ -75,7 +75,7 @@ console.log(getExtremeElements([1, 2, 3, 4, 5])); //1,5
 console.log(getExtremeElements(["Earth", "Mars", "Venus"])); // earth, venus
 console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));*/
 
-function splitMessage(message, delimiter) {
+/*function splitMessage(message, delimiter) {
   let words;
   // Change code below this line
  words = message.split(delimiter);
@@ -85,4 +85,28 @@ function splitMessage(message, delimiter) {
 }
 console.log(splitMessage("Mango hurries to the train", " "));
 console.log(splitMessage("Mango", ""));
-console.log(splitMessage("best_for_week", "_"));
+console.log(splitMessage("best_for_week", "_"));*/
+
+/*function calculateEngravingPrice(message, pricePerWord) {
+  
+  let quantityWord = message.split(" ").length;
+    return quantityWord * pricePerWord;
+    };
+
+console.log(calculateEngravingPrice("JavaScript is in my blood", 10));//50
+console.log(calculateEngravingPrice("JavaScript is in my blood", 20)); //100
+console.log(calculateEngravingPrice("Web-development is creative work", 40));//160
+console.log(calculateEngravingPrice("Web-development is creative work", 20));//80*/
+
+/*function makeStringFromArray(array, delimiter) {
+  let string;
+  // Change code below this line
+  string = array.join(delimiter);
+  return string;
+
+  // Change code above this line
+  return string;
+}
+console.log(makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " "));
+console.log(makeStringFromArray(["M", "a", "n", "g", "o"], ""));
+console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));*/
